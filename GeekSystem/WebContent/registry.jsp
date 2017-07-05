@@ -8,9 +8,9 @@
 </head>
 <body>
 	<form id="reg" name="reg" action="Registry" method="post">
-		<input type="text" name="userName" id="userName">
-		<input type="text" name="password" id="password">
-		<input type="text" name="email" id="email">
+		用户名：<input type="text" name="userName" id="userName"><br/>
+		密码：<input type="text" name="password" id="password"><br/>
+		Email：<input type="text" name="email" id="email"><br/>
 		<input type="submit" value="提交">
 	</form>
 </body>

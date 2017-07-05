@@ -12,6 +12,10 @@ public class User {
 	private String userName;
 	private String password;
 	private String role;
+	private String email;
+	
+
+
 	private List<Address> addresslist;
 	
 	public int getId() {
@@ -44,9 +48,10 @@ public class User {
 		this.role = role;
 	}
 	
-	
-	public boolean reg() {
-		//DAO.
-		return true;
+	public String getEmail() {
+		return email;
+	}
+	public void setEmail(String email) {
+		this.email = email;
 	}
 }

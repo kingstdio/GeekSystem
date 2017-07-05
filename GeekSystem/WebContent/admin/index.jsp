@@ -21,10 +21,12 @@
 <script src="editor/ueditor.all.js"></script>
 <script src="javascript/plug-ins/pagination.js"></script>
 <script src="javascript/public.js"></script>
+
 </head>
 <body>
 <div class="main-wrap">
 	<div class="side-nav">
+	
 		<div class="side-logo">
 			<div class="logo">
 				<span class="logo-ico">
@@ -41,6 +43,32 @@
 				<a href="index.html" class="InitialPage"><i class="icon-dashboard"></i>用户管理</a>
 			</h2>
 			<ul>
+				<li>
+					<dl>
+						<dt>
+							<i class="icon-columns"></i>论文题目管理<i class="icon-angle-right"></i>
+						</dt>
+						<dd>
+							<a href="flex-layout.html">开题分组管理</a>
+						</dd>
+						<dd>
+							<a href="flow-layout.html">答辩分组管理</a>
+						</dd>
+					</dl>
+				</li>
+				<li>
+					<dl>
+						<dt>
+							<i class="icon-columns"></i>论文题目管理<i class="icon-angle-right"></i>
+						</dt>
+						<dd>
+							<a href="flex-layout.html">开题分组管理</a>
+						</dd>
+						<dd>
+							<a href="flow-layout.html">答辩分组管理</a>
+						</dd>
+					</dl>
+				</li>
 				<li>
 					<dl>
 						<dt>

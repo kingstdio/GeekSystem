@@ -38,8 +38,12 @@ public class Registry extends HttpServlet {
 		user.setUserName(request.getParameter("userName"));
 		user.setPassword(request.getParameter("password"));
 		user.setEmail(request.getParameter("email"));
-		response.setCharacterEncoding("UTF-8");
+		
+		response.setCharacterEncoding("UTF-8");//设置编码方式
+		
+		//以什么样的方式显示
 		response.getWriter().append("<html><meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\">");
+		
 		userOperation userOp = new userOperation();
 		
 		ResultSet rs = userOp.getUserList();
@@ -48,10 +52,11 @@ public class Registry extends HttpServlet {
 			response.getWriter().append("<table width='100%'>");
 			response.getWriter().append("<tr><td>编号</td><td>用户名</td><td>密码</td><td>Email</td></tr>");
 			while(rs.next()) {
+				response.getWriter().append("{").append(String.valueOf( rs.getInt(1))+","+rs.getString(2)+","
+				+","+rs.getString(4)+"}");
 				
-				
-				response.getWriter().append("<br/><tr><td>").append(String.valueOf( rs.getInt(1))+"</td><td>"+rs.getString(2)+"</td><td>"+rs.getString(3)
-						+"</td><td>"+rs.getString(4)+"</td></tr>");	
+				//response.getWriter().append("<br/><tr><td>").append(String.valueOf( rs.getInt(1))+"</td><td>"+rs.getString(2)+"</td><td>"+rs.getString(3)
+				//		+"</td><td>"+rs.getString(4)+"</td></tr>");	
 				
 			}
 			response.getWriter().append("</table>");

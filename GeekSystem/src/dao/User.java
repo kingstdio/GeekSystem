@@ -7,6 +7,11 @@ import java.sql.SQLException;
 import tools.MD5;
 import tools.SqlHelper;
 
+/***
+ * Dao用户类
+ * @author shand
+ *
+ */
 public class User {
 	
 	/**
